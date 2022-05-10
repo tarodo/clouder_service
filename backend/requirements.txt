@@ -1,0 +1,4 @@
+fastapi[all]==0.77.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+environs==9.5.0

@@ -1,12 +1,13 @@
 import os
 
-from app import models, schemas
-from app.crud import get_user_by_username
-from app.db import SessionLocal
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from sqlalchemy.orm import Session
+
+from app import models, schemas
+from app.crud import get_user_by_username
+from app.db import SessionLocal
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
